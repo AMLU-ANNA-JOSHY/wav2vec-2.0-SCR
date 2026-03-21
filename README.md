@@ -1,4 +1,5 @@
 # wav2vec-2.0-SCR
+## Dysarthric Speech Command Recognition using wav2vec 2.0
 - This repository contains experiments conducted using Wav2Vec 2.0, a self-supervised learning framework developed by Meta AI. The pretrained Wav2Vec 2.0 model is used for downstream dysarthric speech specific tasks through fine-tuning and feature extraction.
 - The first notebook shows how the wav2vec 2.0 model can be used as a feature extractor for speech-command recognition (SCR). A closed vocabulary word recognition system is implemented for people with dysarthria, which can be incorporated into assistive devices. The 19 computer commands from the dysarthric speech database, namely, UA-Speech is used for the work. The CNN portion of the model is freezed, and the latter layers finetuned for the word recognition application.
 - The second notebook shows how the model can be improved by incorporating information about the severity level of the disorder through multi-task learning (MTL). Severity level classification is implemented as an auxiliary task, to aid the main task of SCR. The accuracy of word recognition was monitored in both the cases.
